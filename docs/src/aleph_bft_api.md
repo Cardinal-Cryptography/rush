@@ -183,7 +183,7 @@ Let `round_delay` be the average delay between two consecutive rounds in the Dag
 We note that the issue of an honest node's data not being included in the stream is not too dangerous for most of the applications. For instance, for the two example scenarios:
 
 1. For the **finality gadget** example, most honest nodes see the same blocks and there is a high level of redundancy, so it does not quite matter that some of the nodes are possibly censored.
-2. For the **state machine replication** example one must assume that there is some redundancy in the way transactions are distributed among nodes. For instance if there is a gurantee (that one can easily achieve by randomly gossiping each transaction to a smal random subset of nodes) that each transaction appears in the pools of at least `5` nodes, then the issue of censorship essentially goes away.
+2. For the **state machine replication** example one must assume that there is some redundancy in the way transactions are distributed among nodes. For instance if there is a gurantee (that one can easily achieve by randomly gossiping each transaction to a small random subset of nodes) that each transaction appears in the pools of at least `5` nodes, then the issue of censorship essentially goes away.
 
 Still, the most important thing to take away from this section is that if censorship happens, then the configuration of AlephBFT is suboptimal and one should increase the `round_delay`.
 
