@@ -93,7 +93,7 @@ for further details.
 
 Note that if the number of properly working nodes is less or equal than two times the number of faulty nodes, they will be unable to advance the protocol on their own.
 
-The script will try to start nodes at predefined IP addresses, `127.0.0.1:100XX`, where `XX` denotes the node id. If the port is unavailable, the node will log an error and keep trying to aquire it, waiting 10 seconds between consecutive attempts.
+The script will try to start nodes at predefined IP addresses, `127.0.0.1:100XX`, where `XX` denotes the node id. If the port is unavailable, the node will log an error and keep trying to acquire it, waiting 10 seconds between consecutive attempts.
 
 Running this script will result in generating log files `node0.log, node1.log, ...` corresponding to subsequent nodes.
 A directory called `aleph-bft-examples-ordering-backup` will be created to store data required by the crash recovery mechanism, and the logs from subsequent runs will be appended to existing log files.
