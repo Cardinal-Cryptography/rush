@@ -23,5 +23,5 @@ log = "0.4"
 
 [dev-dependencies]
 aleph-bft-mock = { path = "../mock" }
-rand = "0.8"
+rand = "0.9"
 tokio = { version = "1", features = ["macros", "rt", "rt-multi-thread", "time"] }
