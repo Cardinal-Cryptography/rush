@@ -623,7 +623,7 @@ where
 /// = H>`] it is enough to provide implementation of [`FinalizationHandler<DP::Output>`]. We provide
 /// implementation of [`UnitFinalizationHandler<Data = DP::Output, Hasher = H>`] for anything that satisfies
 /// the trait [`FinalizationHandler<DP::Output>`] (by means of [`FinalizationHandlerAdapter`]). Implementing
-/// [`UnitFinalizationHandler`] directly is considered less stable since it exposes intrisics which might be
+/// [`UnitFinalizationHandler`] directly is considered less stable since it exposes intrinsics which might be
 /// subject to change. Implement [`FinalizationHandler<DP::Output>`] instead, unless you absolutely know
 /// what you are doing.
 pub async fn run_session<
